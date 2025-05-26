@@ -1,9 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/yashpal2104/renovate-sample-task/cmd"
+)
 
-func Hello(name string) string {
-    // Return a greeting that embeds the name in a message.
-    message := fmt.Sprintf("Hi, %v. Welcome!", name)
-    return message
+func main() {
+	cmd.Execute()
 }
