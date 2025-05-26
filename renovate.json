@@ -1,6 +1,26 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
-  ]
+    "config:base"
+  ],
+  "dependencyDashboard": true,
+  "labels": ["dependencies", "renovate"],
+  "automerge": false,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["security"],
+      "automerge": true,
+      "labels": ["security"]
+    },
+    {
+      "groupName": "golang.org/x modules",
+      "matchPackagePatterns": ["^golang\\.org/x/"],
+      "groupSlug": "golang-x"
+    }
+  ],
+  "enabledManagers": ["gomod"],
+  "baseBranches": ["main", "release/*"],
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 5,
+  "prCreation": "not-pending"
 }
