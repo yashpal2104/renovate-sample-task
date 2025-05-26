@@ -8,8 +8,13 @@
   "automerge": false,
   "packageRules": [
     {
+<<<<<<< HEAD
       "matchUpdateTypes": ["security"],
       "automerge": true,
+=======
+      "matchVulnerabilitySeverity": "any",
+      "automerge": false,
+>>>>>>> 0a0e5d2 (Add custom renovate configuration)
       "labels": ["security"]
     },
     {
