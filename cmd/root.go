@@ -22,7 +22,7 @@ func Execute() {
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "mycli",
+	Use:   "fruitcli",
 	Short: "It helps you select fruits of different sizes and test out the Renovate tool",
 	Long:  `This CLI is designed for you to select fruits based on different sizes blah blah blah you don't care about this even I don't care about it what we are trying to do here is to test out the Renovate tool to automate dependency updates and patch regular security threats through making PRs to fix it.`,
 	// Uncomment the following line if your bare application
