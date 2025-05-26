@@ -8,7 +8,7 @@
   "automerge": false,
   "packageRules": [
     {
-      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchUpdateTypes": ["security"],
       "matchVulnerabilitySeverity": "any",
       "automerge": false,
       "labels": ["security"]
